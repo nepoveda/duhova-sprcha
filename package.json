@@ -1,0 +1,38 @@
+{
+  "name": "react-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "react-bootstrap": "^0.30.6",
+    "lodash": "^4.12.0",
+    "immutable": "^3.8.1",
+    "body-parser": "^1.16.0",
+    "cors": "^2.8.1",
+    "express": "^4.14.1"
+  },
+  "devDependencies": {
+    "browserify": "^14.0.0",
+    "coffee-reactify": "^5.1.0",
+    "watchify": "^3.7.0",
+    "envify": "^4.0.0"
+  },
+  "browserify": {
+    "transform": [
+      "coffee-reactify",
+      "envify"
+    ]
+  },
+  "scripts": {
+    "watch": "NODE_ENV=development watchify  -v --extension=\".coffee\" src/main.coffee -o build/main.js",
+    "build": "NODE_ENV=production browserify -v --extension=\".coffee\" src/main.coffee -o build/main.js",
+    "update": "npm-check-updates -u && npm install",
+    "backend": "coffee -c backend/ && nodejs backend/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
