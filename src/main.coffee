@@ -1,40 +1,44 @@
 React    = require('react')
 ReactDOM = require('react-dom')
-{DropdownButton, Glyphicon, MenuItem, Dropdown} = require('react-bootstrap')
-{WelcomeScreen} = require('./components/welcome')
+{Glyphicon, MenuItem, Dropdown, Jumbotron} = require('react-bootstrap')
+{ContactScreen} = require('./components/contact')
 {TerapyScreen} = require('./components/terapy')
 {MassageScreen} = require('./components/massage')
+{EnergyScreen} = require('./components/energy')
 
 NavigationDropdown = (props) ->
-  <Dropdown>
+  <Dropdown id="navigace">
     <Dropdown.Toggle>
       <Glyphicon glyph="th" />
     </Dropdown.Toggle>
     <Dropdown.Menu>
       <MenuItem onClick={->props.onSetScreen('Terapy')}>Terapie pastelkou</MenuItem>
       <MenuItem onClick={->props.onSetScreen('Massage')}>Masáže</MenuItem>
+      <MenuItem onClick={->props.onSetScreen('Energy')}>Energetické čištění prostor</MenuItem>
       <MenuItem onClick={->props.onSetScreen('Contact')}>Kontakt</MenuItem>
     </Dropdown.Menu>
   </Dropdown>
 
 RootComponent = React.createClass
   getInitialState: ->
-    shownScreen: 'Welcome'
+    shownScreen: 'Contact'
   render: ->
     mainComponent = switch @state.shownScreen
-      when 'Welcome'
-        <WelcomeScreen />
+      when 'Contact'
+        <ContactScreen />
       when 'Terapy'
         <TerapyScreen />
       when 'Massage'
         <MassageScreen />
-    <div>
+      when 'Energy'
+        <EnergyScreen />
+    <Jumbotron>
       <NavigationDropdown onSetScreen={(id) => @setState(shownScreen: id)}/>
 
       <div className="container">
         {mainComponent}
       </div>
-    </div>
+    </Jumbotron>
 
 
 ReactDOM.render(
