@@ -10,12 +10,6 @@ history = createHistory()
 {MassageScreen} = require('./components/massage')
 {EnergyScreen} = require('./components/energy')
 
-imgUrl = './images/pozadi.png'
-styles = {
-      backgroundImage: url('./images/pozadi.png'),
-      backgroundSize: 'cover'
-    }
-
 NavigationDropdown = (props) ->
   <Dropdown id="navigation">
     <Dropdown.Toggle>
@@ -48,8 +42,7 @@ RootComponent = React.createClass
         <MassageScreen />
       when 'Energy'
         <EnergyScreen />
-    <div style={ styles }>
-
+    <div>
       <NavigationDropdown onSetScreen={@setScreen} />
 
       <div className="container" >
