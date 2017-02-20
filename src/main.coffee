@@ -1,13 +1,23 @@
 React    = require('react')
 ReactDOM = require('react-dom')
+
+createHistory = require('history').createBrowserHistory
+history = createHistory()
+
 {Glyphicon, MenuItem, Dropdown, Jumbotron} = require('react-bootstrap')
 {ContactScreen} = require('./components/contact')
 {TerapyScreen} = require('./components/terapy')
 {MassageScreen} = require('./components/massage')
 {EnergyScreen} = require('./components/energy')
 
+imgUrl = './images/pozadi.png'
+styles = {
+      backgroundImage: url('./images/pozadi.png'),
+      backgroundSize: 'cover'
+    }
+
 NavigationDropdown = (props) ->
-  <Dropdown id="navigace">
+  <Dropdown id="navigation">
     <Dropdown.Toggle>
       <Glyphicon glyph="th" />
     </Dropdown.Toggle>
@@ -21,7 +31,13 @@ NavigationDropdown = (props) ->
 
 RootComponent = React.createClass
   getInitialState: ->
-    shownScreen: 'Contact'
+    { pathname } = window.location
+    shownScreen: pathname[1..] || 'Contact'
+  setScreen: (id) ->
+    @setState(shownScreen: id)
+    location = window.location
+    location.pathname = '/' + id
+    history.push(location)
   render: ->
     mainComponent = switch @state.shownScreen
       when 'Contact'
@@ -32,13 +48,14 @@ RootComponent = React.createClass
         <MassageScreen />
       when 'Energy'
         <EnergyScreen />
-    <Jumbotron>
-      <NavigationDropdown onSetScreen={(id) => @setState(shownScreen: id)}/>
+    <div style={ styles }>
 
-      <div className="container">
+      <NavigationDropdown onSetScreen={@setScreen} />
+
+      <div className="container" >
         {mainComponent}
       </div>
-    </Jumbotron>
+    </div>
 
 
 ReactDOM.render(
