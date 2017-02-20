@@ -1,3 +1,25 @@
-#app {
+.background {
   background-image: url("/assets/images/pozadi.png");
+  background-size: cover;
+  position: relative;
+}
+
+
+.map {
+  position: relative !important;
+  width: 75% !important;
+  margin: auto !important;
+}
+
+.logo{
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+#navigation{
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  z-index: 1030;
 }
