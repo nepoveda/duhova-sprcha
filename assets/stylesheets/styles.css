@@ -1,20 +1,23 @@
 .background {
   background-image: url("/assets/images/pozadi.png");
   background-size: cover;
-  position: relative;
 }
 
 
 .map {
   position: relative !important;
   width: 75% !important;
-  margin: auto !important;
+  height: 500px !important;
+  margin-bottom: 50px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border: solid 1px;
 }
 
 .logo{
-  align-items: center;
-  justify-content: center;
-  width: 50%;
+  display:block;
+  margin: 0 auto;
+  width: 40%;
 }
 
 #navigation{

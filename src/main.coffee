@@ -48,7 +48,7 @@ RootComponent = React.createClass
       <NavigationDropdown onSetScreen={@setScreen} />
 
       <div className="container" >
-      <div className="logo"> <Image src="/assets/images/logo.png" responsive/> </div>
+      <div className="logo"> <Image src="/assets/images/logo.png" responsive align-self="center"/> </div>
         {mainComponent}
       </div>
     </div>

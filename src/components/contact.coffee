@@ -25,9 +25,10 @@ ContactScreen = ->
       <p> Metro Pražského Povstání, trasa C, ulicí Na Dolinách dolů, po pravé straně,
           Duhová spracha </p>
       <p>Auto se dá v okolí zaparkovat přímo na hlavní ulici Na Dolinách </p>
+      <br/>
 
       <Map google={window.google}
-        style={height:'75%', position: 'absolute'}
+        style={position: 'absolute'}
         className={'map'}
         initialCenter={{lat: 50.057307 , lng: 14.42969}}
         zoom={18}>
