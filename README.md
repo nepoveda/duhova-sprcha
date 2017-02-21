@@ -57,6 +57,20 @@ npm run watch
 npm run update
 ```
 
+## Example nginx config
+
+```
+server {
+  listen 80;
+  root /home/danig/Dokumenty/duhova-sprcha;
+  index index.html;
+  try_files $uri /index.html;
+  access_log  /var/log/nginx/sprcha_access.log;
+  error_log   /var/log/nginx/sprcha_error.log;
+}
+
+```
+
 ## Resources
 - react.js (frontend framework) - https://facebook.github.io/react/docs/hello-world.html
 - twitter bootstrap (styling framework) - http://getbootstrap.com/components/
