@@ -4,31 +4,18 @@ ReactDOM = require('react-dom')
 createHistory = require('history').createBrowserHistory
 history = createHistory()
 
-{Glyphicon, MenuItem, Dropdown, Image} = require('react-bootstrap')
+{NavigationDropdown} =require('./components/navigation')
 {ContactScreen} = require('./components/contact')
 {TerapyScreen}  = require('./components/terapy')
 {MassageScreen} = require('./components/massage')
 {EnergyScreen}  = require('./components/energy')
-
-NavigationDropdown = (props) ->
-  <div id="navigation">
-    <Dropdown id="NavigationDropdown">
-      <Dropdown.Toggle>
-        <Glyphicon glyph="th" />
-      </Dropdown.Toggle>
-      <Dropdown.Menu>
-        <MenuItem onClick={->props.onSetScreen('Terapy')}>Terapie pastelkou</MenuItem>
-        <MenuItem onClick={->props.onSetScreen('Massage')}>Masáže</MenuItem>
-        <MenuItem onClick={->props.onSetScreen('Energy')}>Energetické čištění prostor</MenuItem>
-        <MenuItem onClick={->props.onSetScreen('Contact')}>Kontakt</MenuItem>
-      </Dropdown.Menu>
-    </Dropdown>
-    </div>
+{FrontScreen} = require('./components/front')
+{Logo} = require('./components/logo')
 
 RootComponent = React.createClass
   getInitialState: ->
     { pathname } = window.location
-    shownScreen: pathname[1..] || 'Contact'
+    shownScreen: pathname[1..] || 'Front'
   setScreen: (id) ->
     @setState(shownScreen: id)
     location = window.location
@@ -44,12 +31,15 @@ RootComponent = React.createClass
         <MassageScreen />
       when 'Energy'
         <EnergyScreen />
+      when 'Front'
+        <FrontScreen />
     <div className="background">
       <NavigationDropdown onSetScreen={@setScreen} />
 
       <div className="container" >
-      <div className="logo"> <Image src="/assets/images/logo.png" responsive align-self="center"/> </div>
-        {mainComponent}
+        {if @state.shownScreen != 'Front'
+          <Logo onSetScreen={@setScreen}/>}
+      {mainComponent}
       </div>
     </div>
 

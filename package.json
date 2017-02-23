@@ -1,5 +1,5 @@
 {
-  "name": "react-test",
+  "name": "duhova-sprcha",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -36,6 +36,6 @@
     "backend": "coffee -c backend/ && nodejs backend/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Dan Nepejchal",
   "license": "ISC"
 }
