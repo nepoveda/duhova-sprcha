@@ -33,7 +33,7 @@ RootComponent = React.createClass
         <EnergyScreen />
       when 'Front'
         <FrontScreen />
-    <div className="background">
+    <div className={@state.shownScreen}>
       <NavigationDropdown onSetScreen={@setScreen} />
 
       <div className="container" >
