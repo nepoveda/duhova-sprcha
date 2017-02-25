@@ -10,12 +10,13 @@ history = createHistory()
 {MassageScreen} = require('./components/massage')
 {EnergyScreen}  = require('./components/energy')
 {FrontScreen} = require('./components/front')
+{CombinatedTerapy} = require('./components/combinated.coffee')
 {Logo} = require('./components/logo')
 
 RootComponent = React.createClass
   getInitialState: ->
     { pathname } = window.location
-    shownScreen: pathname[1..] || 'Front'
+    shownScreen: pathname[1..] || 'uvodni-strana'
   setScreen: (id) ->
     @setState(shownScreen: id)
     location = window.location
@@ -23,21 +24,23 @@ RootComponent = React.createClass
     history.push(location)
   render: ->
     mainComponent = switch @state.shownScreen
-      when 'Contact'
+      when 'kontakt'
         <ContactScreen />
-      when 'Terapy'
+      when 'terapie-pastelkou'
         <TerapyScreen />
-      when 'Massage'
+      when 'masaze'
         <MassageScreen />
-      when 'Energy'
+      when 'energeticke-cisteni-prostor'
         <EnergyScreen />
-      when 'Front'
+      when 'uvodni-strana'
         <FrontScreen />
+      when 'kombinovana-terapie'
+        <CombinatedTerapy />
     <div className={@state.shownScreen}>
       <NavigationDropdown onSetScreen={@setScreen} />
 
       <div className="container" >
-        {if @state.shownScreen != 'Front'
+        {if @state.shownScreen != 'uvodni-strana'
           <Logo onSetScreen={@setScreen}/>}
       {mainComponent}
       </div>

@@ -8,10 +8,11 @@ NavigationDropdown = (props) ->
         <Glyphicon glyph="th" />
       </Dropdown.Toggle>
       <Dropdown.Menu>
-        <MenuItem onClick={->props.onSetScreen('Terapy')}>Terapie pastelkou</MenuItem>
-        <MenuItem onClick={->props.onSetScreen('Massage')}>Masáže</MenuItem>
-        <MenuItem onClick={->props.onSetScreen('Energy')}>Energetické čištění prostor</MenuItem>
-        <MenuItem onClick={->props.onSetScreen('Contact')}>Kontakt</MenuItem>
+        <MenuItem onClick={->props.onSetScreen('terapie-pastelkou')}>Terapie pastelkou</MenuItem>
+        <MenuItem onClick={->props.onSetScreen('masaze')}>Masáže</MenuItem>
+        <MenuItem onClick={->props.onSetScreen('energeticke-cisteni-prostor')}>Energetické čištění prostor</MenuItem>
+        <MenuItem onClick={->props.onSetScreen('kombinovana-terapie')}> Kombinovaná terapie </MenuItem>
+        <MenuItem onClick={->props.onSetScreen('kontakt')}>Kontakt</MenuItem>
       </Dropdown.Menu>
     </Dropdown>
     </div>

@@ -25,6 +25,7 @@ ContactScreen = ->
       <p> Metro Pražského Povstání, trasa C, ulicí Na Dolinách dolů, po pravé straně,
           Duhová spracha </p>
       <p>Auto se dá v okolí zaparkovat přímo na hlavní ulici Na Dolinách </p>
+      <p>Zvonek DIPURAMED </p>
       <br/>
 
       <Map google={window.google}

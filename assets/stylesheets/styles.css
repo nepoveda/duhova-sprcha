@@ -11,7 +11,7 @@
 .logo{
   display:block;
   margin: 0 auto;
-  width: 40%;
+  width: 25%;
   align-self: center;
 }
 
@@ -19,6 +19,7 @@
   display:block;
   margin: 0 auto;
   align-self: center;
+  width: 40%;
 }
 
 .frontHeader{
@@ -33,21 +34,22 @@
 }
 
 
-.Contact{
+.kontakt{
   background-color: rgba(22, 236, 40, 0.11) !important;
   height: 100%;
 }
 
-.Massage{
+.masaze{
   background-color: rgba(0, 128, 255, 0.31);
   height: 100vh;
 }
 
-.Energy{
+.energeticke-cisteni-prostor{
   background-color: rgba(128, 0, 128, 0.31);
   height: 100vh;
 }
-.Front{
+.uvodni-strana{
   background-image: url(/assets/images/pozadi.png);
+  background-size: cover;
   height: 100vh;
 }
