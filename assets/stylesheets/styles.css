@@ -9,47 +9,91 @@
 }
 
 .logo{
+  background-image: url(/assets/images/pozadi.png);
+  background-size: cover;
   display:block;
   margin: 0 auto;
-  width: 25%;
-  align-self: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  max-width: 100%;
+}
+.img-responsive{
+  max-width: 40%;
+  margin: 0 auto;
+}
+
+h1{
+  text-align: center;
+  font-size: 350%;
 }
 
 .frontLogo{
   display:block;
   margin: 0 auto;
-  align-self: center;
-  width: 40%;
+  margin-top: 50px;
+  margin-bottom: 5%;
+  align-self: auto;
 }
 
-.frontHeader{
+.frontPage{
   text-align: center;
 }
 
+.frontHeader{
+  font-family: 'MTCORSVA';
+  font-style: italic;
+}
 #navigation{
   position: fixed;
   left: 10px;
   top: 10px;
   z-index: 1030;
+  font-family: "andalus";
 }
 
+.pages{
+  background-color: white;
+  border-radius: 25px;
+  height: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-family: "andalus";
+  font-size: 150%;
+}
 
+.kombinovana-terapie{
+  background-color: rgba(255, 165, 0, 0.31);
+  min-height: 100vh;
+  max-height: 100%;
+
+}
 .kontakt{
   background-color: rgba(22, 236, 40, 0.11) !important;
-  height: 100%;
+  min-height: 100vh;
+  max-height: 100%;
 }
 
 .masaze{
   background-color: rgba(0, 128, 255, 0.31);
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 100%;
 }
 
 .energeticke-cisteni-prostor{
   background-color: rgba(128, 0, 128, 0.31);
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 100%;
 }
 .uvodni-strana{
   background-image: url(/assets/images/pozadi.png);
   background-size: cover;
   height: 100vh;
+}
+
+@font-face {
+	font-family: 'MTCORSVA';
+	src: url('./MTCORSVA.eot');
+	src: local('MTCORSVA'), url('./MTCORSVA.woff') format('woff'), url('./MTCORSVA.ttf') format('truetype');
 }

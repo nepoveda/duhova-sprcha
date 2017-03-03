@@ -40,8 +40,7 @@ RootComponent = React.createClass
       <NavigationDropdown onSetScreen={@setScreen} />
 
       <div className="container" >
-        {if @state.shownScreen != 'uvodni-strana'
-          <Logo onSetScreen={@setScreen}/>}
+          <Logo onSetScreen={@setScreen}/>
       {mainComponent}
       </div>
     </div>

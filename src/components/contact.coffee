@@ -2,7 +2,7 @@ React    = require('react')
 {Map, Marker} = require('google-maps-react')
 
 ContactScreen = ->
-  <div>
+  <div className="pages">
       <h1>O nás</h1>
       <p><strong>Duhová sprcha </strong> je náš splněný sen. Jsme Klára a Zuzka, dvě kamarádky, které našly
          společnou cestu v životním poslání, pomáhat lidem …najít cestu k sobě.</p>

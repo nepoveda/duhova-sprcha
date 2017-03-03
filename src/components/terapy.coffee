@@ -1,7 +1,7 @@
 React    = require('react')
 
 TerapyScreen = ->
-  <div>
+  <div className="pages">
     <h1> TERAPIE PASTELKOU </h1>
     <h2> Co je to? </h2>
     <p> Terapie pastelkou, automatická kresba nebo intuitivní malování. Ať to nazveme

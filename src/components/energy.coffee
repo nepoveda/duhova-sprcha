@@ -1,7 +1,7 @@
 React    = require('react')
 
 EnergyScreen = ->
-  <div>
+  <div className="pages">
     <h1>ENERGETICKÉ ČIŠTĚNÍ PROSTOR</h1>
     <h2> Co je to? </h2>
     <p>Energetické čištění prostor je čištění pomocí energií, vykuřovadel, malování či

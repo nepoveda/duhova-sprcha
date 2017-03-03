@@ -2,7 +2,7 @@ React    = require('react')
 {Table} = require('react-bootstrap')
 
 MassageScreen = ->
-  <div>
+  <div className="pages">
     <h1>Masáže</h1>
     <p>Energetická relaxační masáž je masáž „šitá na míru“  . Přizpůsobuji se potřebám
 
