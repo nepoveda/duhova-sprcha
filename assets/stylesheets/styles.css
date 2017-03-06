@@ -18,21 +18,13 @@
   max-width: 100%;
 }
 .img-responsive{
-  max-width: 40%;
+  max-width: 25%;
   margin: 0 auto;
 }
 
 h1{
   text-align: center;
   font-size: 350%;
-}
-
-.frontLogo{
-  display:block;
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 5%;
-  align-self: auto;
 }
 
 .frontPage{
@@ -42,6 +34,8 @@ h1{
 .frontHeader{
   font-family: 'MTCORSVA';
   font-style: italic;
+  color: rgb(255,0,255);
+  font-size: 700%;
 }
 #navigation{
   position: fixed;
@@ -87,7 +81,7 @@ h1{
   max-height: 100%;
 }
 .uvodni-strana{
-  background-image: url(/assets/images/pozadi.png);
+  background-image: url(/assets/images/vesmir.png);
   background-size: cover;
   height: 100vh;
 }
