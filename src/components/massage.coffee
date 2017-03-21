@@ -3,7 +3,7 @@ React    = require('react')
 
 MassageScreen = ->
   <div className="pages">
-    <h1>Masáže</h1>
+    <h1>MASÁŽE</h1>
     <p>Energetická relaxační masáž je masáž „šitá na míru“  . Přizpůsobuji se potřebám
 
 Vašeho těla. Kombinuji různé techniky, jak z klasické relaxační masáže, sportovní,
