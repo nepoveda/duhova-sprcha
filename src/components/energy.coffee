@@ -20,7 +20,7 @@ Pokud jsou to otisky negativní, mohou ovlivňovat kvalitu našeho přítomného
 mohlo narušovat klid a pohodu. </p>
     <h2> Jak to poznám? </h2>
     <p> Špatně se Vám spí? </p>
-    <p>Slyšíte zvuky, které logicky není možné, aby z onoho místa  </p>
+    <p>Slyšíte zvuky, které logicky není možné, aby z onoho místa vycházeli? </p>
     <p> Vidíte stíny? Máte pocity úzkosti? </p>
     <p> Chcete udělat rekonstrukci prostorů a neustále jsou Vám kladeny překážky? </p>
     <h2> Ceník </h2>
