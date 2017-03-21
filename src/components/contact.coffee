@@ -23,8 +23,8 @@ ContactScreen = ->
       <p> Zastávka tramvaje 17,3,2,21 Podolská vodárna a ulicí Podolská, Sinkulova, Na
         Dolinách cca 7 minut pěšky nahoru do kopce, po levé straně Duhová sprcha.</p>
       <p> Metro Pražského Povstání, trasa C, ulicí Na Dolinách dolů, po pravé straně,
-          Duhová spracha </p>
-      <p>Auto se dá v okolí zaparkovat přímo na hlavní ulici Na Dolinách </p>
+          Duhová sprcha. </p>
+      <p>Auto se dá v okolí zaparkovat přímo na hlavní ulici Na Dolinách. </p>
       <p>Zvonek DIPURAMED </p>
       <br/>
 

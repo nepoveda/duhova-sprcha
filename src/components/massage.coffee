@@ -12,13 +12,13 @@ tak i havajské lomi-lomi masáže. </p>
     <p> Aromatické oleje jsou samozřejmostí. Jsou čistě přírodní a vůni si vybíráte sami či
 
 po konzultaci vyberu pro Vás. </p>
-    <p> Cílem této masáže je uvolnit, nabít a odejít příjemně naladěn </p>
+    <p> Cílem této masáže je uvolnit, nabít a odejít příjemně naladěn. :-) </p>
     <h2> Ceník </h2>
     <Table>
       <tbody>
         <tr>
           <td> Energetická relaxační masáž </td>
-          <td> 45 min+5 min / 750,- </td>
+          <td> 45 min + 5 min / 750,- </td>
         </tr>
         <tr>
           <td> Energetické čištění </td>
