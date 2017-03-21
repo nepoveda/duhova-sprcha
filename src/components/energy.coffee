@@ -10,7 +10,7 @@ kyvadla. Záleží na náročnosti problému, kterou metodu zvolíme. </p>
     <p>Slyšeli jste někdy o toulavých duších? Pojmy jako poltergeist, paranormální jevy,
 
 duchové, negativní či stagnující energie, cizí bytosti? Toto nám rozhodně není cizí. </p>
-    <p>Každé místo má svou minulost a v některých mohou zůstat energetické
+    <p>Každé místo má svou minulost a v některých mohou zůstat energetické otisky.
 
 Pokud jsou to otisky negativní, mohou ovlivňovat kvalitu našeho přítomného
 

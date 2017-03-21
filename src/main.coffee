@@ -33,7 +33,7 @@ RootComponent = React.createClass
       when 'energeticke-cisteni-prostor'
         <EnergyScreen />
       when 'uvodni-strana'
-        <FrontScreen />
+        <FrontScreen onSetScreen={@setScreen}/>
       when 'kombinovana-terapie'
         <CombinatedTerapy />
     <div className={@state.shownScreen}>

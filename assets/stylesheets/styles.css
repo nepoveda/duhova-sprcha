@@ -24,7 +24,7 @@
 
 h1{
   text-align: center;
-  font-size: 350%;
+  font-size: 300%;
 }
 
 .frontPage{
@@ -34,7 +34,7 @@ h1{
 .frontHeader{
   font-family: 'MTCORSVA';
   font-style: italic;
-  color: rgb(255,0,255);
+  color: rgb(128,0,128);
   font-size: 700%;
 }
 #navigation{
@@ -54,40 +54,61 @@ h1{
   padding-left: 2%;
   padding-right: 2%;
   font-family: "andalus";
-  font-size: 150%;
+  font-size: 125%;
 }
 
 .kombinovana-terapie{
-  background-color: rgba(255, 165, 0, 0.31);
+  background-color: rgb(242,144,147);
   min-height: 100vh;
   max-height: 100%;
 
 }
 .kontakt{
-  background-color: rgba(22, 236, 40, 0.11) !important;
+  background-color: rgb(181,208,91) !important;
   min-height: 100vh;
   max-height: 100%;
 }
 
 .masaze{
-  background-color: rgba(0, 128, 255, 0.31);
+  background-color: rgb(75,193,238);
   min-height: 100vh;
   max-height: 100%;
 }
 
 .energeticke-cisteni-prostor{
-  background-color: rgba(128, 0, 128, 0.31);
+  background-color: rgb(165,112,173);
   min-height: 100vh;
   max-height: 100%;
 }
 .uvodni-strana{
   background-image: url(/assets/images/vesmir.png);
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 100%;
+}
+.terapie-pastelkou{
+  min-height: 100vh;
+  max-height: 100%;
 }
 
 @font-face {
 	font-family: 'MTCORSVA';
 	src: url('./MTCORSVA.eot');
 	src: local('MTCORSVA'), url('./MTCORSVA.woff') format('woff'), url('./MTCORSVA.ttf') format('truetype');
+}
+.row-centered{
+  text-align: center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+    width: 55%;
 }
