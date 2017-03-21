@@ -3,7 +3,7 @@ React    = require('react')
 
 ContactScreen = ->
   <div className="pages">
-      <h1>O nás</h1>
+      <h1>O NÁS</h1>
       <p><strong>Duhová sprcha </strong> je náš splněný sen. Jsme Klára a Zuzka, dvě kamarádky, které našly
          společnou cestu v životním poslání, pomáhat lidem …najít cestu k sobě.</p>
       <p>Klára se věnuje hlavně péči o duši a čištění, a to pomocí napojení a pastelek :0) </p>
