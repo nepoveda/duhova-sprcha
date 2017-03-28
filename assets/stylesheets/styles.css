@@ -9,7 +9,7 @@
 }
 
 .logo{
-  background-image: url(/assets/images/pozadi.png);
+  background-image: url(../images/pozadi.png);
   background-size: cover;
   display:block;
   margin: 0 auto;
@@ -31,11 +31,27 @@ h1{
   text-align: center;
 }
 
+.frontLogo{
+  background-image: url(../images/pozadi.png);
+  background-size: cover;
+  display:block;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  max-width: 100%;
+}
+
+.logo-big{
+  max-width: 40s%;
+  margin: 0 auto;
+}
+
 .frontHeader{
   font-family: 'MTCORSVA';
   font-style: italic;
   color: rgb(128,0,128);
-  font-size: 700%;
+  font-size: 600%;
 }
 #navigation{
   position: fixed;
@@ -81,7 +97,7 @@ h1{
   max-height: 100%;
 }
 .uvodni-strana{
-  background-image: url(/assets/images/vesmir.png);
+  background-image: url(../images/vesmir.png);
   background-size: cover;
   min-height: 100vh;
   max-height: 100%;
@@ -110,5 +126,5 @@ h1{
 .thumbnail {
     border: 0 none;
     box-shadow: none;
-    width: 55%;
+    width: 40%;
 }

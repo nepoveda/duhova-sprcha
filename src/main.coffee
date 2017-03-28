@@ -12,6 +12,7 @@ history = createHistory()
 {FrontScreen} = require('./components/front')
 {CombinatedTerapy} = require('./components/combinated.coffee')
 {Logo} = require('./components/logo')
+{FrontLogo} = require('./components/front-logo')
 
 RootComponent = React.createClass
   getInitialState: ->
@@ -40,7 +41,10 @@ RootComponent = React.createClass
       <NavigationDropdown onSetScreen={@setScreen} />
 
       <div className="container" >
-          <Logo onSetScreen={@setScreen}/>
+        {if @state.shownScreen == 'uvodni-strana'
+          <FrontLogo />
+        else
+          <Logo onSetScreen={@setScreen}/>}
       {mainComponent}
       </div>
     </div>
