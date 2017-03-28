@@ -9,11 +9,7 @@
 }
 
 .logo{
-<<<<<<< HEAD
-  background-image: url(../images/pozadi.png);
-=======
   background-image: url('../images/pozadi.png');
->>>>>>> 19ca77a5376cc4d7f0908dceaab9a57eadbaf5d9
   background-size: cover;
   display:block;
   margin: 0 auto;
@@ -101,11 +97,7 @@ h1{
   max-height: 100%;
 }
 .uvodni-strana{
-<<<<<<< HEAD
-  background-image: url(../images/vesmir.png);
-=======
   background-image: url('../images/vesmir.png');
->>>>>>> 19ca77a5376cc4d7f0908dceaab9a57eadbaf5d9
   background-size: cover;
   min-height: 100vh;
   max-height: 100%;
