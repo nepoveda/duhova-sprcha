@@ -16,9 +16,13 @@ history = createHistory()
 
 RootComponent = React.createClass
   getInitialState: ->
-    shownScreen: 'uvodni-strana'
+    { pathname } = window.location
+    shownScreen: pathname[1..] || 'uvodni-strana'
   setScreen: (id) ->
     @setState(shownScreen: id)
+    location = window.location
+    location.pathname = '/' + id
+    history.push(location)
   render: ->
     mainComponent = switch @state.shownScreen
       when 'kontakt'
