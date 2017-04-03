@@ -4,7 +4,7 @@ React    = require('react')
 FrontScreen = (props) ->
   <div className="frontPage">
     <h1 className="frontHeader">
-      U nás najdeš cestu k sobě
+      "U nás najdeš cestu k sobě"
     </h1>
       <Grid className="pages">
         <Row className="row-centered">

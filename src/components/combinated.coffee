@@ -8,5 +8,6 @@ CombinatedTerapy = ->
     Úleva nejen pro Vaši duši, ale i Vaše tělo. </p>
     <h2> Ceník </h2>
     <p>2 hodiny / 2.500,-Kč </p>
+    <p> (Terapie se může protáhnout na 2,5 hodiny) </p>
   </div>
 module.exports ={CombinatedTerapy}

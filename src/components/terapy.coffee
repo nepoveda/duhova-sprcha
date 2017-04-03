@@ -1,4 +1,5 @@
 React    = require('react')
+{ListGroup} = require('react-bootstrap')
 
 TerapyScreen = ->
   <div className="pages">
@@ -12,27 +13,20 @@ jakkoliv, jedná se vlastně o druh psychoterapie, napojení a pomoci malovaném
 
 směr. </p>
     <h2> V čem mi můžete pomoci? </h2>
-    <p> Pomoc může probíhat na mnoha úrovních:
-
-Pokud se tzv. „nemůžete pohnout z místa“, Váš život ustrnul v jednom bodě.
-
-Máte zdravotní potíže, ale lékaři tvrdí, že jste zdraví. (např. dušnost, motání hlavy,
-
-nepříjemné pocity v břiše typu „maturita“, návaly strachu a paniky…)
-
-Chce se Vám „bezdůvodně“ plakat a jste unavení.
-
-Máte stavy úzkosti?
-
-Máte bloky, špatné vzpomínky či dokonce fobie.
-
-Nerozumíte svým dětem.
-
-Rádi byste pomohli svým dětem a nevíte jak na to.
-
-Nebo jste jen zvědaví? </p>
+    <ListGroup>
+    Pomoc může probíhat na mnoha úrovních:
+      <li> Pokud se tzv. „nemůžete pohnout z místa“, Váš život ustrnul v jednom bodě. </li>
+      <li> Máte zdravotní potíže, ale lékaři tvrdí, že jste zdraví. (např. dušnost, motání hlavy,
+      nepříjemné pocity v břiše typu „maturita“, návaly strachu a paniky…) </li>
+      <li> Chce se Vám „bezdůvodně“ plakat a jste unavení. </li>
+      <li> Máte stavy úzkosti? </li>
+      <li> Máte bloky, špatné vzpomínky či dokonce fobie. </li>
+      <li> Nerozumíte svým dětem. </li>
+      <li> Rádi byste pomohli svým dětem a nevíte jak na to. </li>
+      <li> Nebo jste jen zvědaví? </li>
+    </ListGroup>
   <h2> Ceník</h2>
-  <p>1 hod/1000,- Kč… každá další započatá hodina 500,-Kč </p>
+  <p>1 hod/1200,- Kč… každá další započatá hodina 500,-Kč </p>
 
   </div>
 
