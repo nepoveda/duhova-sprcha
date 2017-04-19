@@ -22,7 +22,8 @@ po konzultaci vyberu pro Vás. </p>
           <td> 1.200,- Kč </td>
         </tr>
         <tr>
-          <td> (Olejová masáž dle potřeby Vašeho těla včetně  pročištění a vyrovnání energií.) </td>
+          <td> (Olejová masáž dle potřeby Vašeho těla včetně  pročištění a vyrovnání energií.)
+</td><td></td><td></td>
         </tr>
         <tr>
           <td> Relaxační masáž </td>
@@ -35,7 +36,8 @@ po konzultaci vyberu pro Vás. </p>
           <td> 1000,- Kč </td>
         </tr>
         <tr>
-          <td> (Nejedná se o masáž, ale vyrovnání energií ve Vašem těle...léčba probíhá v oblečení.) </td>
+          <td> (Nejedná se o masáž, ale vyrovnání energií ve Vašem těle...léčba probíhá v oblečení.)
+</td><td></td><td></td>
         </tr>
       </tbody>
     </Table>

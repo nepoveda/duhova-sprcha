@@ -14,15 +14,18 @@ history = createHistory()
 {Logo} = require('./components/logo')
 {FrontLogo} = require('./components/front-logo')
 
-RootComponent = React.createClass
-  getInitialState: ->
+class RootComponent extends React.Component
+  constructor: ->
     { pathname } = window.location
-    shownScreen: pathname[1..] || 'uvodni-strana'
+    @state = {shownScreen: pathname[1..] || 'uvodni-strana'}
+    @setScreen = @setScreen.bind(@)
+
   setScreen: (id) ->
-    @setState(shownScreen: id)
+    @setState({shownScreen: id})
     location = window.location
     location.pathname = '/' + id
     history.push(location)
+
   render: ->
     mainComponent = switch @state.shownScreen
       when 'kontakt'
