@@ -1,18 +1,18 @@
-React    = require('react')
-ReactDOM = require('react-dom')
+React                = require('react')
+ReactDOM             = require('react-dom')
 
-createHistory = require('history').createBrowserHistory
-history = createHistory()
+createHistory        = require('history').createBrowserHistory
+history              = createHistory()
 
-{NavigationDropdown} =require('./components/navigation')
-{ContactScreen} = require('./components/contact')
-{TerapyScreen}  = require('./components/terapy')
-{MassageScreen} = require('./components/massage')
-{EnergyScreen}  = require('./components/energy')
-{FrontScreen} = require('./components/front')
-{CombinatedTerapy} = require('./components/combinated.coffee')
-{Logo} = require('./components/logo')
-{FrontLogo} = require('./components/front-logo')
+{NavigationDropdown} = require('./components/navigation')
+{ContactScreen}      = require('./components/contact')
+{TerapyScreen}       = require('./components/terapy')
+{MassageScreen}      = require('./components/massage')
+{EnergyScreen}       = require('./components/energy')
+{FrontScreen}        = require('./components/front')
+{CombinatedTerapy}   = require('./components/combinated.coffee')
+{Logo}               = require('./components/logo')
+{FrontLogo}          = require('./components/front-logo')
 
 class RootComponent extends React.Component
   constructor: ->
