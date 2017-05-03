@@ -138,10 +138,14 @@ h1{
     margin: 0 auto;
     align-items: center;
 }
-.thumbnail {
+.thumbnail{
     border: 0 none;
     box-shadow: none;
     width: 40%;
-    margin: 0 auto;
-    cursor: pointer
+    margin: auto;
+    cursor: pointer;
+}
+
+.front-text{
+  width: 30%;
 }
